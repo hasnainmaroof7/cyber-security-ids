@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber SOC Dashboard</title>
+
+    <!-- Socket.IO -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- Vis Network -->
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+       <h1 style="letter-spacing:2px;">
+🛡 CYBER SECURITY INTRUSION DETECTION SYSTEM
+</h1>
+
+<p style="opacity:0.8;">
+AI IDS & Network Monitoring + Anomaly Detection System
+</p>
+    </header>
+
+    <!-- STATS -->
+    <section class="stats">
+
+        <div class="card">
+            <h3>Total Attacks</h3>
+            <p id="attackCount">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Risk Score</h3>
+            <p id="riskScore">100</p>
+        </div>
+
+        <div class="card">
+            <h3>Threat Level</h3>
+            <p id="threatLevel">LOW</p>
+        </div>
+
+    </section>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- GRAPH -->
+        <div id="network"></div>
+
+        <!-- SIDE PANEL -->
+        <aside>
+
+            <div class="panel">
+                <h2>🚨 Live Alerts</h2>
+                <div id="alerts"></div>
+            </div>
+
+            <div class="panel">
+                <h2>📈 Attack Timeline</h2>
+                <div id="timeline"></div>
+            </div>
+
+            <!-- REAL CHART -->
+            <div class="panel">
+                <h2>📊 Attack Analytics</h2>
+                <canvas id="attackChart"></canvas>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>

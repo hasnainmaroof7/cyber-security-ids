@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #050816;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* HEADER */
+header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #00ffcc;
+    background: #0b1020;
+}
+
+header h1 {
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+header p {
+    margin-top: 5px;
+    color: #aaa;
+}
+
+/* STATS */
+.stats {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+}
+
+.card {
+    flex: 1;
+    background: #10182b;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #00ffcc;
+    box-shadow: 0 0 10px rgba(0,255,204,0.2);
+    text-align: center;
+}
+
+.card h3 {
+    color: #00ffcc;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* MAIN */
+main {
+    display: flex;
+    height: calc(100vh - 180px);
+}
+
+/* NETWORK */
+#network {
+    flex: 3;
+    border-top: 1px solid #00ffcc;
+}
+
+/* SIDE */
+aside {
+    flex: 1;
+    background: #0b1020;
+    border-left: 1px solid #00ffcc;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.panel {
+    margin-bottom: 20px;
+    background: #10182b;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #00ffcc;
+}
+
+.panel h2 {
+    margin-bottom: 10px;
+    color: #00ffcc;
+}
+
+/* ALERTS */
+.alert {
+    background: rgba(255,0,0,0.1);
+    border-left: 4px solid red;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* TIMELINE */
+.timeline-item {
+    padding: 8px;
+    margin-bottom: 8px;
+    background: rgba(0,255,204,0.05);
+    border-left: 4px solid #00ffcc;
+    border-radius: 5px;
+}
