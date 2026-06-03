@@ -2,7 +2,7 @@
 
 ---
 
-## 🚀 Project Overview
+ 🚀 Project Overview
 
 This project is a **Cyber Security Intrusion Detection System (IDS)** that detects malicious or unusual network activity using:
 
@@ -14,7 +14,7 @@ It simulates network traffic and shows results on a web dashboard.
 
 ---
 
-## 🎯 Features
+🎯 Features
 
 - 🔍 Detects abnormal network behavior  
 - 🧠 Pattern-based attack detection  
@@ -25,7 +25,7 @@ It simulates network traffic and shows results on a web dashboard.
 
 ---
 
-## 🧱 Project Structure
+ 🧱 Project Structure
 cyber-ids/
 │
 ├── data/
@@ -50,9 +50,9 @@ cyber-ids/
 
 ---
 
-## ⚙️ How to Run
+ ⚙️ How to Run
 
-### 1. Install dependencies
+ 1. Install dependencies
 ```bash
 npm install
 node server.js
